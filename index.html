@@ -1,0 +1,255 @@
+<!Doctype html>
+<html>
+    <head>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+            nav{
+                background-color: rgb(172, 77, 77);
+                position: fixed;
+                top:0px;
+                left:0px;
+                right:0px;
+                color:white;
+                padding-top:10px;
+                padding-bottom: 10px;
+            }
+            ul{
+                margin-left: 40%;
+                width: 50%;
+              /*  border:solid 2px;*/
+                display:flex;
+                justify-content: space-around;
+                list-style: none; 
+                           
+            }
+            a{
+                text-decoration: none;
+                color:inherit;
+            }
+            li{
+                font-weight: bold;
+            }
+            
+            body{
+                margin:0px;
+                padding: 0px;
+                background-color: rgb(84, 84, 104)
+            }
+            #welcome-section{
+                margin: 72px 0px 0px 0px;
+                 width: 100%;
+               
+                height:100vh;
+                color:white;
+               
+                font-weight: bold;
+                display: flex;
+                color:white;
+                text-align: center;
+               
+                background-color: rgb(24, 18, 18);
+            }
+            #description{
+                width:70%;
+                margin:40vh auto;
+                height: 20vh;
+                display: grid;
+                grid-template-columns: 100%;
+                align-items: center;
+            }
+            #description p{
+                color:rgb(172, 77, 77);
+                font-weight: 100;
+               
+            }
+            #otherSections{
+                color:white;
+                width:90%;
+                margin:0 auto;
+            }
+            .projDesc{
+                padding-bottom: 0px;
+                margin-bottom: 2px;
+                width: 80%;
+                text-align: center
+            }   
+            hr{
+                width: 100%;
+                padding-top: 0px;
+                margin-top: 0px;
+                background-color: white;
+                color: white;
+                
+            }
+            
+            section img{
+                width:100%;
+                display: block;
+                margin: 0 auto;
+                
+            }
+            #projects{
+                width: 100%;
+                margin: 0 auto;
+                /* border: solid 2px #ccc; */
+                text-align: center;
+            }
+            .project-tile {
+                text-align: center;
+                margin-bottom: 20px;
+                width: 90%;
+                /* padding-bottom: 10px; */
+                margin:0 auto;
+                /* border: solid 2px white; */
+                margin-top: 20px;
+            }
+           .section-lnk{
+               width: 96%;
+               display: block;
+               color:white;
+               padding: 10px;
+               margin: 0 auto;
+               background-color: black;
+           }
+         
+        footer{
+            background-color: black;
+            margin-top:20px;
+            padding-top:10px;
+        }
+         footer h1{
+            font-weight: bold;
+             color:white;
+             width:80%;
+             text-align: center;
+             margin: 0 auto;
+         }
+         footer p{
+             color:white;
+             color:white;
+             width:80%;
+             text-align: center;
+             margin: 0 auto;
+             margin-top: 10px;
+             margin-bottom: 15px;
+         }
+         .social-icons{
+             width:180px;
+             margin:0 auto;
+         }
+         .social-icons a{
+             margin-left:20px;
+            text-align: center;
+             }
+
+         #prof-img{
+             max-width: 100%;
+             height: 200px;
+             border-radius: 10px;
+             background-size: cover;
+         }
+        @media (min-width:700px){
+            #projects{
+                grid-column-gap: 3%;
+                display: grid;
+                
+                grid-column-start: 40px;
+                grid-template-columns: 30% 30% 30%;
+              
+            }
+            .project-tile{
+                margin-top: 10px;
+                   
+            }
+            .section-lnk{
+                width: 94%;
+            }
+            section img{
+                height: 80%;;
+            }
+           
+           #description{
+            grid-template-columns: 50% 50%;
+           }
+           
+        }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#otherSections">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <section id="welcome-section">
+            <div id="description">
+
+                <img id="prof-img" src="https://avatars1.githubusercontent.com/u/42899338?s=460&v=4">
+                <div >
+                    <h1>Hey I am Jesulonimi</h1>
+                    <p>a mobile application developer</p>
+                </div>
+            </div>
+        </section>
+        <div id="otherSections">
+            <h1 class="projDesc">These are some of my Projects</h1>
+            <hr>
+
+            <section id="projects">
+
+                
+
+                <div class="project-tile">
+                        <img src="./assets/burger-logo.png">
+                        <a class="section-lnk" href="https://react-my-burger-d112b.firebaseapp.com">Burger Builder in React</a>
+                        <a class="section-lnk" href="https://github.com/Jesulonimi21/BurgerBuilder-react"> View Source code</a>
+                    </div>  
+                    
+                <div class="project-tile">
+                        <img src="https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/images/calc.png">
+                        <a href="https://nimifirebaseblogsite.firebaseapp.com" class="section-lnk"> React Calculator</a>
+                        <a class="section-lnk" href="https://github.com/Jesulonimi21/React-Calculator"> View Source code</a>
+                    </div>
+            
+                <div class="project-tile">
+                        <img src="https://c2.staticflickr.com/4/3689/10613180113_fdf7bcd316_b.jpg">
+                        <a href="https://jesulonimi21.github.io/TributePage/" class="section-lnk"> Tribute Page</a>
+                        <a class= "section-lnk" href="https://github.com/Jesulonimi21/TributePage/"> View Source code</a>
+                    </div>
+                <div class="project-tile">
+                    <img src="./assets/balookidsapp.jpg">
+                    <a href="https://play.google.com/store/apps/details?id=com.jesulonimi.balookidsapp" class="section-lnk"> Baloo Kids App</a>
+                    <a class="section-lnk" > Contact Developer to View Source Code</a>
+                </div>
+               
+                <div class="project-tile">
+                    <img src="./assets/playstore-icon.png">
+                    <a href="https://play.google.com/store/apps/details?id=jesulonimi.com.kwikJobs" class="section-lnk">kwikJobs</a>
+                    <a class= "section-lnk"> Contact Developer To View Source code</a>
+                </div>
+                <div class="project-tile">
+                        <img src="https://lh3.googleusercontent.com/8Ye0fvk_Wjs1sNe8brFUylSJ2HLJVB7sCp_c1Lmfue7hSwrs-7vQC_aMzlhjkQ2WqbA=s180-rw">
+                        <a href="https://play.google.com/store/apps/details?id=com.jesulonimi.nimiWeather" class="section-lnk">NimiWeather</a>
+                        <a class= "section-lnk" href="https://github.com/Jesulonimi21/NimiWeather-React-Native">View Source code</a>
+                    </div>
+               
+              
+            </section>
+    </div>
+        <footer id="contact">
+            <h1>Lets Work together...</h1>
+            <p><em>How do you take your Cofee</em></p>
+          <div class="social-icons">
+            <a href="https://github.com/Jesulonimi21"><img style='width:30px; height:30px' src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"> </a>
+            <a href="https://www.facebook.com/akingbesote.jesulonimi"><img style='width:30px; height:30px' src="data:image/png;base64,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"></a>
+            <a href="https://twitter.com/nimi_software"><img style='width:30px; height:30px' src="data:image/png;base64,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"></a>
+          
+          </div>
+            
+            <a>LInk to github</a>
+        </footer>
+    </body>
+</html>
